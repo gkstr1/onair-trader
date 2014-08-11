@@ -26,6 +26,7 @@
 #                          DELETE /listings/:id(.:format)        listings#destroy
 #                     root GET    /                              listings#index
 #              pages_about GET    /pages/about(.:format)         pages#about
+#                   seller GET    /seller(.:format)              listings#seller
 #            pages_contact GET    /pages/contact(.:format)       pages#contact
 #
 
@@ -34,8 +35,8 @@ Rails.application.routes.draw do
   resources :listings
  root 'listings#index'
  
-    get 'pages/about'
-
+  get 'pages/about'
+  get 'seller' => "listings#seller"
   get 'pages/contact'
 
 
