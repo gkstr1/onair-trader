@@ -1,3 +1,4 @@
+source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
 
@@ -11,7 +12,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
-
+gem 'stripe'
 gem 'spring',        group: :development
 gem 'annotate'
 gem 'paperclip'
